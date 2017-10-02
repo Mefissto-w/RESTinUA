@@ -1,0 +1,13 @@
+@keyframes showmenu{
+	0%{
+		display: block;
+		opacity: 0;
+	}
+	50%{
+		opacity: .5;
+	}
+	100%{
+		display: block;
+		opacity: 1;
+	}
+}
