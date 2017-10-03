@@ -1,0 +1,55 @@
+.buttons-wrap{
+	height: 100%;
+}
+.button-form{
+	display: flex;
+	height: inherit;
+	align-items: center;
+	& > button {
+		margin-right: 20px;
+	}
+}
+.search-wrap{
+	display: none;
+}
+.top-btn {
+	width: 42px;
+	height: 40px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+.button {
+	&-user{
+		background: url('../img/top-icons.png') no-repeat 0px 0px;
+	}
+	&-mail{
+		background: url('../img/top-icons.png') no-repeat -62px 0px;
+	}
+	&-search{
+		background: url('../img/top-icons.png') no-repeat -124px 0px;
+	}
+}
+.visible{
+	display: block;
+}
+.lang {
+	position: relative;
+	& .ua > button {
+		background: url('../img/top-icons.png') no-repeat -186px 0px;
+	}
+	& .en > button {
+		background: url('../img/top-icons.png') no-repeat -186px -54px;
+	}
+	& .ru > button {
+		background: url('../img/top-icons.png') no-repeat -186px -108px;
+	}
+	&__hidden {
+		display: none;
+		position: absolute;
+		margin-top: 15px;
+		& li:first-child{
+			margin-bottom: 15px;
+		}
+	}
+}

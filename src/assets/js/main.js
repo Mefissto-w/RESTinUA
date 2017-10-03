@@ -1,5 +1,5 @@
 /*Libs include*/
-//= ../libs/jquery/dist/jquery.js
+//= ./common/common.js
 
 /*Modules include*/
 //= ./common/localStorage.js

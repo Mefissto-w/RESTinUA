@@ -14,35 +14,68 @@
   <body>
     <header class="header">
       <div class="header__wrapper">
-        <div class="header__logo"><img src="img/logo-rest-in-ua.webp" alt="aaaaREST in UA" title="REST in UA"></div>
-        <nav class="menu">
-          <ul class="menu__list">
-            <li class="menu__item"><a class="menu__link" href="#">Проживання</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Дозвілля</a>
-              <ul class="menu__inner">
-                <li class="menu__item"><a class="menu__link" href="#">Екскурсії</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Ресторани</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Бані / Сауни</a></li>
-              </ul>
-            </li>
-            <li class="menu__item"><a class="menu__link" href="#">Сервіси</a>
-              <ul class="menu__inner">
-                <li class="menu__item"><a class="menu__link" href="#">Прокат спорядження</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Інструктори</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Трансфер</a></li>
-              </ul>
-            </li>
-            <li class="menu__item"><a class="menu__link" href="#">Варто відвідати</a>
-              <ul class="menu__inner">
-                <li class="menu__item"><a class="menu__link" href="#">Історичні пам’ятки</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Природні пам’ятки</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Календар подій</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Цікаво про карпати</a></li>
-              </ul>
-            </li>
-            <li class="menu__item"><a class="menu__link" href="#">Реклама на сайті</a></li>
-          </ul>
-        </nav>
+        <div class="container">
+          <div class="row">
+            <div class="col-2">
+              <div class="header__logo"><img src="img/logo-rest-in-ua.png" alt="REST in UA" title="REST in UA"></div>
+            </div>
+            <div class="col-7">
+              <nav class="menu">
+                <ul class="menu__list">
+                  <li class="menu__item"><a class="menu__link" href="#">Проживання</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#">Дозвілля</a>
+                    <ul class="menu__inner">
+                      <li class="menu__item"><a class="menu__link" href="#">Екскурсії</a></li>
+                      <li class="menu__item"><a class="menu__link" href="#">Ресторани</a></li>
+                      <li class="menu__item"><a class="menu__link" href="#">Бані / Сауни</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu__item"><a class="menu__link" href="#">Сервіси</a>
+                    <ul class="menu__inner">
+                      <li class="menu__item"><a class="menu__link" href="#">Прокат спорядження</a></li>
+                      <li class="menu__item"><a class="menu__link" href="#">Інструктори</a></li>
+                      <li class="menu__item"><a class="menu__link" href="#">Трансфер</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu__item"><a class="menu__link" href="#">Варто відвідати</a>
+                    <ul class="menu__inner">
+                      <li class="menu__item"><a class="menu__link" href="#">Історичні пам’ятки</a></li>
+                      <li class="menu__item"><a class="menu__link" href="#">Природні пам’ятки</a></li>
+                      <li class="menu__item"><a class="menu__link" href="#">Календар подій</a></li>
+                      <li class="menu__item"><a class="menu__link" href="#">Цікаво про карпати</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu__item"><a class="menu__link" href="#">Реклама на сайті</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-3">
+              <div class="buttons-wrap">
+                <form class="button-form">
+                  <button class="top-btn button-user"></button>
+                  <button class="top-btn button-mail"></button>
+                  <div class="search-wrap">
+                    <input type="text">
+                  </div>
+                  <button class="top-btn button-search"></button>
+                  <ul class="lang">
+                    <li class="ua">
+                      <button class="top-btn" type="button"></button>
+                      <ul class="lang__hidden">
+                        <li class="en">
+                          <button class="top-btn"></button>
+                        </li>
+                        <li class="ru">
+                          <button class="top-btn"></button>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     <script src="js/main.js"></script>
