@@ -1,16 +1,17 @@
-.col-3
+.col-auto
 	.buttons-wrap
 		form.button-form
-			button.top-btn.button-user
-			button.top-btn.button-mail
+			button(type="button").top-btn.button-user
+			button(type="button").top-btn.button-mail
+			button(type="button").top-btn.button-search
 			.search-wrap
 				input(type="text")
-			button.top-btn.button-search
+				button(type="button").search-inner
 			ul.lang
 				li.ua
 					button(type="button").top-btn
 					ul.lang__hidden
 						li.en
-							button.top-btn
+							button(type="button").top-btn
 						li.ru
-							button.top-btn
+							button(type="button").top-btn

@@ -2,6 +2,7 @@
 	height: 100%;
 }
 .button-form{
+	position: relative;
 	display: flex;
 	height: inherit;
 	align-items: center;
@@ -10,7 +11,35 @@
 	}
 }
 .search-wrap{
+	z-index: 2;
 	display: none;
+	position: absolute;
+	& .search-inner{
+		display: block;
+		position: absolute;
+		width: 33px;
+		height: 29px;
+		top: 9px;
+		right: 20px;
+		cursor: pointer;
+		background: url('../img/search_mini_btn.png') no-repeat;
+		border: none;
+		outline: none;
+	}
+	& input{
+		position: relative;
+		display: block;
+		width: 200px;
+		height: 46px;
+		border: 1px solid #5d83c2;
+		border-radius: 5px;
+		left: -15px;
+		top: 0;
+		color: $lightblue;
+		text-indent: 5px;
+		padding-right: 43px;
+		outline: none;
+	}
 }
 .top-btn {
 	width: 42px;
@@ -28,6 +57,9 @@
 	}
 	&-search{
 		background: url('../img/top-icons.png') no-repeat -124px 0px;
+		:hover + div{
+			display: block;
+		}
 	}
 }
 .visible{
@@ -35,8 +67,15 @@
 }
 .lang {
 	position: relative;
-	& .ua > button {
-		background: url('../img/top-icons.png') no-repeat -186px 0px;
+	& .ua {
+		& > button {
+			background: url('../img/top-icons.png') no-repeat -186px 0px;
+		}
+		&:hover > .lang__hidden{
+			// display: block;
+			// opacity: 0;
+			// animation: showmenu .7s ease .2s forwards;
+		}
 	}
 	& .en > button {
 		background: url('../img/top-icons.png') no-repeat -186px -54px;

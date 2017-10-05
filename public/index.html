@@ -16,28 +16,28 @@
       <div class="header__wrapper">
         <div class="container">
           <div class="row">
-            <div class="col-2">
-              <div class="header__logo"><img src="img/logo-rest-in-ua.png" alt="REST in UA" title="REST in UA"></div>
+            <div class="col-auto">
+              <div class="header__logo"><a href="#"><img src="img/logo-rest-in-ua.png" alt="REST in UA" title="REST in UA"></a></div>
             </div>
-            <div class="col-7">
+            <div class="col-7 order">
               <nav class="menu">
                 <ul class="menu__list">
                   <li class="menu__item"><a class="menu__link" href="#">Проживання</a></li>
-                  <li class="menu__item"><a class="menu__link" href="#">Дозвілля</a>
+                  <li class="menu__item"><a class="menu__link" href="#">Дозвілля<span></span></a>
                     <ul class="menu__inner">
                       <li class="menu__item"><a class="menu__link" href="#">Екскурсії</a></li>
                       <li class="menu__item"><a class="menu__link" href="#">Ресторани</a></li>
                       <li class="menu__item"><a class="menu__link" href="#">Бані / Сауни</a></li>
                     </ul>
                   </li>
-                  <li class="menu__item"><a class="menu__link" href="#">Сервіси</a>
+                  <li class="menu__item"><a class="menu__link" href="#">Сервіси<span></span></a>
                     <ul class="menu__inner">
                       <li class="menu__item"><a class="menu__link" href="#">Прокат спорядження</a></li>
                       <li class="menu__item"><a class="menu__link" href="#">Інструктори</a></li>
                       <li class="menu__item"><a class="menu__link" href="#">Трансфер</a></li>
                     </ul>
                   </li>
-                  <li class="menu__item"><a class="menu__link" href="#">Варто відвідати</a>
+                  <li class="menu__item"><a class="menu__link" href="#">Варто відвідати<span></span></a>
                     <ul class="menu__inner">
                       <li class="menu__item"><a class="menu__link" href="#">Історичні пам’ятки</a></li>
                       <li class="menu__item"><a class="menu__link" href="#">Природні пам’ятки</a></li>
@@ -49,24 +49,25 @@
                 </ul>
               </nav>
             </div>
-            <div class="col-3">
+            <div class="col-auto">
               <div class="buttons-wrap">
                 <form class="button-form">
-                  <button class="top-btn button-user"></button>
-                  <button class="top-btn button-mail"></button>
+                  <button class="top-btn button-user" type="button"></button>
+                  <button class="top-btn button-mail" type="button"></button>
+                  <button class="top-btn button-search" type="button"></button>
                   <div class="search-wrap">
                     <input type="text">
+                    <button class="search-inner" type="button"></button>
                   </div>
-                  <button class="top-btn button-search"></button>
                   <ul class="lang">
                     <li class="ua">
                       <button class="top-btn" type="button"></button>
                       <ul class="lang__hidden">
                         <li class="en">
-                          <button class="top-btn"></button>
+                          <button class="top-btn" type="button"></button>
                         </li>
                         <li class="ru">
-                          <button class="top-btn"></button>
+                          <button class="top-btn" type="button"></button>
                         </li>
                       </ul>
                     </li>

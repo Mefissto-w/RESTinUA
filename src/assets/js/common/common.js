@@ -1,12 +1,21 @@
 (function(){
-	var langbtn  = document.querySelector('.ua > button'),
-			langlist = document.getElementsByClassName('lang__hidden');
-	console.log(langlist);
+	var langBtn  = document.querySelector('.ua > button'),
+			langList = document.getElementsByClassName('lang__hidden')[0],
+			searchBtn = document.getElementsByClassName('button-search')[0],
+			searchWrap = document.getElementsByClassName('search-wrap')[0],
+			searchInner = document.getElementsByClassName('search-inner')[0];
 
-	langbtn.addEventListener('click', showLang);
+	langBtn.addEventListener('click', toggle);
+	searchBtn.addEventListener('click', toggleSearchWrap);
+	searchInner.addEventListener('click', toggleSearchWrap);
 
-	function showLang(e){
-		langlist[0].classList.add("visible");
-	}
+	function toggle() {
+  langList.style.display = (langList.style.display == 'none') ? 'block' : 'none';
+}
+	function toggleSearchWrap() {
+  searchWrap.style.display = (searchWrap.style.display == 'none') ? 'block' : 'none';
+}
+
+
 
 }());
