@@ -1,0 +1,83 @@
+
+.header__search {
+	background-image: url(../img/karpaty-1.png);
+	background-size: cover;
+	padding-top: 78px;
+	padding-bottom: 100px;
+	min-height: 350px;
+}
+.title-wrap{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 16px;
+	& .h2{
+		font-size: 24px;
+		color: $lightblue;
+		font-family: 'RobotoLight';
+		font-weight: 300;
+	}
+}
+.search-advanced{
+	width: 100%;
+	font-family: 'OpenSansLight';
+	& .col-4:first-child{
+		padding-left: 90px;
+	}
+	& .h3 {
+		color: $darkblue;
+		margin-bottom: 7px;
+		text-transform: uppercase;
+		font-size: 16px;
+		font-weight: 300;
+	}
+	& .select {
+		cursor: pointer;
+		color: #cfdcf1;
+		height: 48px;
+		outline: none;
+		border-radius: 5px;
+		position: relative;
+		display: block;
+		min-width: 266px;
+		border-color: #ffcb6d;
+		& option {
+			outline: none;
+			display: inline-block;
+			border-color: #ffcb6d;
+			padding: 5px 0;
+		}
+		&-wrap{
+			position: relative;
+			display: inline-block;
+			&::after{
+				@include css-triangle($lightblue, down, 5px);
+				top: 25px;
+				right: 5px;
+				top: 23px;
+			}
+		}
+	}
+	& .col-5{
+		padding-left: 50px;
+		padding-top: 40px;
+	}
+}
+.search__btn{
+	cursor: pointer;
+	padding: 15px 30px;
+	background-color: #ffcb6d;
+	border-radius: 5px;
+	outline: none;
+	border: none;
+	font-family: 'OpenSansLight';
+	text-transform: uppercase;
+	font-size: 16px;
+	&-advansed{
+		padding: 14px 30px;
+		box-sizing: border-box;
+		border: 1px solid #5d83c2;
+		background-color: #fff;
+		color: $lightblue;
+	}
+}

@@ -1,14 +1,16 @@
 @import "../../logo/logo";
 @import "../../menu/menu";
 @import "../../user_buttons/user_buttons";
+@import "../../header_search/header_search";
 
 .header{
 
-	&__wrapper{
+	&__top-line{
 		padding-top: 5px;
 		margin: 0 auto;
+		& .row{
+			justify-content: space-between;
+		}
 	}
 }
-.row{
-	justify-content: space-between;
-}
+

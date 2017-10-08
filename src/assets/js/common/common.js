@@ -16,6 +16,6 @@
   searchWrap.style.display = (searchWrap.style.display == 'none') ? 'block' : 'none';
 }
 
-
+document.getElementById("select").selectize();
 
 }());
