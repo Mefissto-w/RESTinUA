@@ -16,10 +16,10 @@
       <div class="header__top-line">
         <div class="container">
           <div class="row">
-            <div class="col-auto">
+            <div class="col-md-2">
               <div class="header__logo"><a href="#"><img src="img/logo-rest-in-ua.png" alt="REST in UA" title="REST in UA"></a></div>
             </div>
-            <div class="col-7 order">
+            <div class="col-md-7">
               <nav class="menu">
                 <ul class="menu__list">
                   <li class="menu__item"><a class="menu__link" href="#">Проживання</a></li>
@@ -49,7 +49,7 @@
                 </ul>
               </nav>
             </div>
-            <div class="col-auto">
+            <div class="col-md-3">
               <div class="buttons-wrap">
                 <form class="button-form">
                   <button class="top-btn button-user" type="button"></button>
@@ -78,49 +78,117 @@
           </div>
         </div>
       </div>
-      <div class="header__search">
-        <div class="container">
-          <div class="row">
-            <div class="title-wrap">
-              <h2 class="h2">Оберіть місце для відпочинку</h2>
-            </div>
-            <div class="search-advanced">
-              <form action="#">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-4">
-                      <h3 class="h3">Оберіть область</h3>
-                      <div class="select-wrap">
-                        <select class="select">
-                          <option>Львівська область</option>
-                          <option>Закарпатська область</option>
-                          <option>Тернопільська область</option>
-                          <option>Івано-Франківська область</option>
-                          <option>Рівненська область</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="col-3">
-                      <h3 class="h3">Оберіть район</h3>
-                      <div class="select-wrap">
-                        <select class="select">
-                          <option>Сколівський район</option>
-                          <option>Самбірський район</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="col-5">
-                      <button class="search__btn" type="button">Пошук</button>
-                      <button class="search__btn search__btn-advansed" type="button">Розширений пошук</button>
-                    </div>
+    </header>
+    <div class="header__search">
+      <div class="header__search-wrap">
+        <div class="title-wrap">
+          <h2 class="h2">Оберіть місце для відпочинку</h2>
+        </div>
+        <div class="search-advanced">
+          <form action="#">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-3">
+                  <h3 class="h3">Оберіть область</h3>
+                  <div class="select-wrap">
+                    <select class="select">
+                      <option>Львівська область</option>
+                      <option>Закарпатська область</option>
+                      <option>Тернопільська область</option>
+                      <option>Івано-Франківська область</option>
+                      <option>Рівненська область</option>
+                    </select>
                   </div>
                 </div>
-              </form>
+                <div class="col-md-3">
+                  <h3 class="h3">Оберіть район</h3>
+                  <div class="select-wrap">
+                    <select class="select">
+                      <option>Сколівський район</option>
+                      <option>Самбірський район</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="button-wrap">
+                    <button class="search__btn" type="button">Пошук</button>
+                    <button class="search__btn search__btn-advansed" type="button">Розширений пошук</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="slider__cont">
+      <h2 class="h2">Рекомендуємо</h2>
+      <div class="slider__items">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-4 slider__item">
+              <div class="slider__composition">
+                <h3 class="h3 slider__title"><a href="#">Готель "Перлина Карпат"</a></h3>
+                <div class="slider__image"><img src="img/1-01.png">
+                  <div class="stars"><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span></div>
+                  <div class="view"><span class="eye"></span><span class="numb">12</span></div>
+                </div>
+                <div class="slider__desc">
+                  <div class="price">
+                    <p>300 грн / номер</p>
+                  </div>
+                  <div class="location"><span>Буковель</span></div>
+                  <div class="sl-more">
+                    <button class="button sl-button" type="button">Детальніше</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 slider__item">
+              <div class="slider__composition">
+                <h3 class="h3 slider__title"><a href="#">Готель "Підгір'я"</a></h3>
+                <div class="slider__image"><img src="img/1-02.png">
+                  <div class="stars"><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span></div>
+                  <div class="view"><span class="eye"></span><span class="numb">12</span></div>
+                </div>
+                <div class="slider__desc">
+                  <div class="price">
+                    <p>240 грн / номер</p>
+                  </div>
+                  <div class="location"><span>Дора</span></div>
+                  <div class="sl-more">
+                    <button class="button sl-button" type="button">Детальніше</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 slider__item">
+              <div class="slider__composition">
+                <h3 class="h3 slider__title"><a href="#">Садиба "Росіш"</a></h3>
+                <div class="slider__image"><img src="img/1-03.png">
+                  <div class="stars"><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span></div>
+                  <div class="view"><span class="eye"></span><span class="numb">12</span></div>
+                </div>
+                <div class="slider__desc">
+                  <div class="price">
+                    <p>180 грн / номер</p>
+                  </div>
+                  <div class="location"><span>Славське</span></div>
+                  <div class="sl-more">
+                    <button class="button sl-button" type="button">Детальніше</button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+        <div class="arrow prev"></div>
+        <div class="arrow next"></div>
       </div>
-    </header>
+      <div class="col-12">
+        <div class="dots"><span class="dot active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+      </div>
+    </div>
     <script src="js/main.js"></script>
   </body>
 </html>

@@ -1,0 +1,49 @@
+.slider__cont
+	h2.h2 Рекомендуємо
+	.slider__items
+		.container
+			.row.justify-content-between
+				.col-4.slider__item
+					.slider__composition
+						include ./title/title
+						.slider__image
+							img(src="img/1-01.png")
+							include ./stars/stars
+							include ./view/view
+						.slider__desc
+							include ./price/price
+							include ./location/location
+							include ./more/more
+				.col-4.slider__item
+					.slider__composition
+						include ./title/title_1
+						.slider__image
+							img(src="img/1-02.png")
+							include ./stars/stars
+							include ./view/view
+						.slider__desc
+							include ./price/price_1
+							include ./location/location_1
+							include ./more/more
+				.col-4.slider__item
+					.slider__composition
+						include ./title/title_2
+						.slider__image
+							img(src="img/1-03.png")
+							include ./stars/stars
+							include ./view/view
+						.slider__desc
+							include ./price/price_2
+							include ./location/location_2
+							include ./more/more
+		.arrow.prev
+		.arrow.next
+	.col-12
+		.dots
+			span.dot.active
+			span.dot
+			span.dot
+			span.dot
+			span.dot
+			span.dot
+			span.dot

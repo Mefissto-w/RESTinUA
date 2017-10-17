@@ -1,24 +1,27 @@
-.title-wrap
-	h2.h2 Оберіть місце для відпочинку
-.search-advanced
-	form(action="#")
-		.container
-			.row
-				.col-4
-					h3.h3 Оберіть область
-					.select-wrap
-						select.select
-							option Львівська область
-							option Закарпатська область
-							option Тернопільська область
-							option Івано-Франківська область
-							option Рівненська область
-				.col-3
-					h3.h3 Оберіть район
-					.select-wrap
-						select.select
-							option Сколівський район
-							option Самбірський район
-				.col-5
-					button(type="button").search__btn Пошук
-					button(type="button").search__btn.search__btn-advansed Розширений пошук
+.header__search
+	.header__search-wrap
+		.title-wrap
+			h2.h2 Оберіть місце для відпочинку
+		.search-advanced
+			form(action="#")
+				.container
+					.row
+						.col-md-3
+							h3.h3 Оберіть область
+							.select-wrap
+								select.select
+									option Львівська область
+									option Закарпатська область
+									option Тернопільська область
+									option Івано-Франківська область
+									option Рівненська область
+						.col-md-3
+							h3.h3 Оберіть район
+							.select-wrap
+								select.select
+									option Сколівський район
+									option Самбірський район
+						.col-md-6
+							.button-wrap
+								button(type="button").search__btn Пошук
+								button(type="button").search__btn.search__btn-advansed Розширений пошук

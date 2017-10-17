@@ -1,0 +1,13 @@
+.price{
+	background:transparent;
+	font-family: $OSLight;
+	color: $lightblue;
+	width: 55%;
+	height: 50%;
+	& p{
+		margin: 0;
+		padding: 10px;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+}

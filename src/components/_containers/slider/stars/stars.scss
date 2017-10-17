@@ -1,0 +1,17 @@
+.stars{
+	cursor: pointer;
+	position: absolute;
+	bottom: 5px;
+	left: 10px;
+	& .star{
+		display: inline-block;
+		width: 18px;
+		height: 17px;
+		margin-right: 4px;
+		background: url(../img/star.png) no-repeat;
+		&:last-child{
+			background: url(../img/star_empty.png) no-repeat;
+			margin-right: 0;
+		}
+	}
+}

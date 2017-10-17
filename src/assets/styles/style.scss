@@ -3,10 +3,11 @@
 
 /* Base */
 @import "global.style";
-@import "bootstrap-grid.css";
+@import "../libs/bootstrap/bootstrap-4.min.css";
 
 /* Containers */
 @import "../../components/_containers/header/header";
+@import "../../components/_containers/slider/slider";
 
 
 /* Responsive Containers */

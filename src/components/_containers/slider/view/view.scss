@@ -1,0 +1,19 @@
+.view{
+	position: absolute;
+	right: 10px;
+	bottom: 5px;
+	& .eye{
+		display: inline-block;
+		width: 26px;
+		height: 16px;
+		opacity: .97;
+		margin-right: 7px;
+		background: url(../img/eye.png) no-repeat;
+	}
+	& .numb{
+		font-family: "OpenSansRegular";
+		font-size: 19px;
+		font-weight: 400;
+		color: #fefefe;
+	}
+}
